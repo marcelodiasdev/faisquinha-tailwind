@@ -33,6 +33,7 @@
           class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
+          onclick="Menu(this)"
         >
           <svg
             class="w-6 h-6"
@@ -48,51 +49,45 @@
             ></path>
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm"
-          >
-            <li>
-              <a href="#" class=""> Home </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contato
-              </a>
-            </li>
-            <li>
-              <div>
-                <input type="checkbox" name="" id="checkbox" class="hidden" />
-                <label for="checkbox" class="cursor-pointer">
-                  <div
-                    class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2"
-                  >
-                    <div class="w-4 h-4 bg-white rounded-full shadow"></div>
-                  </div>
-                </label>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ul
+          class="md:flex md:items-center z-auto md:static absolute bg-white md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li>
+            <a href="#home" class="block py-2 pr-4 pl-3 text-gray-700 rounded">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 rounded">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="#blog" class="block py-2 pr-4 pl-3 text-gray-700 rounded">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block py-2 pr-4 pl-3 text-gray-700 rounded"
+            >
+              Contato
+            </a>
+          </li>
+          <li>
+            <div>
+              <input type="checkbox" name="" id="checkbox" class="hidden" />
+              <label for="checkbox" class="cursor-pointer">
+                <div
+                  class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2"
+                >
+                  <div class="w-4 h-4 bg-white rounded-full shadow"></div>
+                </div>
+              </label>
+            </div>
+          </li>
+        </ul>
       </nav>
     </header>
     <section id="home">
@@ -120,9 +115,267 @@
         </div>
       </div>
     </section>
-    <section id="about"></section>
-    <section id="blog"></section>
-    <section id="contact"></section>
+    <section id="about">
+      <div
+        class="container max-w-6xl mx-auto px-4 py-8 flex flex-col justify-between items-center"
+      >
+        <h2 class="text-4xl font-extrabold text-neutral-600 mb-4">Sobre</h2>
+        <p class="block mt-4 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+          tincidunt tortor. Pellentesque aliquam feugiat facilisis. Fusce ut
+          lobortis sapien. Nullam vitae porttitor tellus. Cras gravida purus id
+          justo suscipit venenatis. Vivamus ornare orci id molestie feugiat.
+          Nulla rutrum felis sit amet tempus fermentum. Morbi non ex ex. Cras
+          quis libero eu ipsum tincidunt mollis. Vestibulum eget enim molestie,
+          sagittis lorem et, ullamcorper nibh. Morbi efficitur turpis molestie
+          ultricies posuere. Quisque ultricies interdum libero in hendrerit.
+        </p>
+        <img
+          src="https://loremflickr.com/1280/960/dog"
+          alt="dog"
+          class="w-full md:w-1/2 mx-auto mt-4"
+        />
+        <p class="block mt-4 text-lg">
+          Nullam at turpis sit amet lorem gravida cursus nec in magna. Vivamus
+          at pulvinar sem, at tempor nulla. Ut commodo enim non neque posuere
+          rutrum. Vestibulum vitae velit lacus. Maecenas suscipit cursus ipsum
+          vel facilisis. Cras tristique molestie enim vel viverra. Ut vel dolor
+          lorem. Etiam purus nisl, iaculis nec enim et, rhoncus suscipit turpis.
+          Fusce pellentesque lectus a elementum tempus. Cras eros tortor, mattis
+          id vehicula quis, pulvinar id purus. Nullam semper sed leo quis
+          aliquet. In rhoncus, nibh vel convallis iaculis, enim odio sodales
+          nisl, in venenatis purus nulla ac felis. Curabitur nec eros lacinia,
+          eleifend sapien a, condimentum felis. Quisque accumsan eu leo sit amet
+          eleifend. Proin commodo lacinia elementum. Suspendisse lorem justo,
+          feugiat id vestibulum vitae, ultricies in enim.
+        </p>
+        <p class="block mt-4 text-lg">
+          Vivamus condimentum luctus quam, at sagittis nibh faucibus non. Sed
+          blandit cursus tortor, pellentesque elementum mi vulputate non. Nunc a
+          ante quis mauris efficitur consequat quis bibendum orci. Curabitur
+          tincidunt efficitur turpis at commodo. Mauris congue cursus purus,
+          vitae commodo justo eleifend quis. Nulla fringilla urna enim, id
+          rhoncus sapien ultricies in. Curabitur auctor metus quis erat feugiat,
+          id ullamcorper lorem dictum. Phasellus vitae ligula urna. Ut vitae mi
+          justo.
+        </p>
+      </div>
+    </section>
+    <section id="blog">
+      <div
+        class="container max-w-6xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4"
+      >
+        <div class="col-span-2 md:col-span-4">
+          <h2 class="text-4xl font-extrabold text-neutral-600">Blog</h2>
+        </div>
+        <div class="bg-stone-300 max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://picsum.photos/200?grayscale&blur=2"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #photography
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #travel
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #winter
+            </span>
+          </div>
+        </div>
+        <div class="bg-stone-300 max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://picsum.photos/200"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #photography
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #travel
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #winter
+            </span>
+          </div>
+        </div>
+        <div class="bg-stone-300 max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://picsum.photos/200?blur=2"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #photography
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #travel
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #winter
+            </span>
+          </div>
+        </div>
+        <div class="bg-stone-300 max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://picsum.photos/200?grayscale"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #photography
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #travel
+            </span>
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              #winter
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-stone-300">
+      <div
+        class="container max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center"
+      >
+        <h2 class="text-4xl font-extrabold text-neutral-600">Contato</h2>
+        <form action="#" method="POST" class="w-full md:w-2/3">
+          <div class="mt-4">
+            <label
+              for="first-name"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Nome
+            </label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="given-name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              required
+            />
+          </div>
+          <div class="mt-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">
+              E-mail
+            </label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autocomplete="given-name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              required
+            />
+          </div>
+          <div class="mt-4">
+            <label
+              for="subject"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Assunto
+            </label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              autocomplete="given-name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              required
+            />
+          </div>
+          <div class="mt-4">
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Mensagem
+            </label>
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              autocomplete="given-name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              required
+            ></textarea>
+          </div>
+          <div class="mt-4">
+            <button
+              type="submit"
+              class="bg-yellow-500 text-white px-10 py-3 mt-5 rounded-full"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -145,6 +398,17 @@
       };
       toggleDarkMode();
       checkbox.addEventListener('click', toggleDarkMode);
+
+      function Menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu'
+          ? ((e.name = 'close'),
+            list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100'))
+          : ((e.name = 'menu'),
+            list.classList.remove('top-[80px]'),
+            list.classList.remove('opacity-100'));
+      }
     </script>
   </body>
 </html>
